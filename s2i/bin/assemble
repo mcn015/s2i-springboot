@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/sh -e
 #
 # S2I assemble script for the 'lighttpd-centos7' image.
 # The 'assemble' script builds your application source ready to run.

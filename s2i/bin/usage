@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/sh -e
 
 cat <<EOF
 This is the s2i-sbringboot S2I image:
@@ -9,7 +9,7 @@ Build in OpenShift:
 oc new-build --name springboot-s2i --strategy=docker \
 --code https://github.com/mcn015/s2i-springboot
 
-oc new-app springboot-test~https://github.com/mcn015/springboot-hello
+oc new-app springboot-s2i~https://github.com/mcn015/springboot-hello
 
 
 EOF
